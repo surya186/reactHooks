@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RegistrationForm from "./Calc/Calculator";
+import UseR from "./Use-Reducer/Use-R";
+import UserRComplex from "./Use-Reducer/Use-R-complex";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row">
+          <h2>useState:</h2>
+          <RegistrationForm />
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <br />
+      <div className="container">
+        <div className="row">
+          <h2>useReducer - simple usage:</h2>
+          <UseR />
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <br />
+      <div className="container">
+        <div className="row">
+          <h2>useReducer - complex usage:</h2>
+          <UserRComplex />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
