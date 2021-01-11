@@ -23,6 +23,9 @@ const RegistrationForm = () => {
     <>
       <div className="container">
           <br />
+          <div className="row">
+            <div className="col-md-3"></div>
+            <div className="col-md-6">
         <h3>Stock Average Calculator</h3>
           <form>
             <div className="form-group">
@@ -77,16 +80,19 @@ const RegistrationForm = () => {
                 }}
               />
             </div>
-            <button className="btn-primary" onClick={doCalculation}>
-              Calculate 
+            <button className="btn btn-primary" onClick={doCalculation}>
+              Calculate
             </button>
             <br />
             <br />
 
             <div>
-              <h3>  {isNaN(result) ? "Can't you enter Properly" : result} </h3>
+              <h3>  {isNaN(result) ? "Please enter valid data . ." : result} </h3>
             </div>
           </form>
+          </div>
+            <div className="col-md-3"></div>
+      </div>
       </div>
     </>
   );
